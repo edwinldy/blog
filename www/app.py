@@ -19,4 +19,4 @@ def get():
     return html2text.html2text(readable_article)
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host='0.0.0.0', port=9000)
