@@ -16,7 +16,7 @@ def get():
     r.encoding = 'utf-8'
     readable_article = Document(r.text).summary()
 #    markdownify_article = html2text.html2text(readable_article)
-    return html2text.html2text(readable_article)
+    return readable_article
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=9000)
